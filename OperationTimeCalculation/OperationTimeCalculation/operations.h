@@ -3,38 +3,22 @@
 
 template<typename T>
 struct Plus {
-private:
-	T a;
-public:
-	Plus(T firstOperand) : a{ firstOperand } {}
-	T operator()(T b) { return a + b; }
+	T operator()(T a, T b) { return a + b; }
 };
 
 template<typename T>
 struct Minus {
-private:
-	T a;
-public:
-	Minus(T firstOperand) : a{ firstOperand } {}
-	T operator()(T b) { return a - b; }
+	T operator()(T a, T b) { return a - b; }
 };
 
 template<typename T>
 struct Multiply {
-private:
-	T a;
-public:
-	Multiply(T firstOperand) : a{ firstOperand } {}
-	T operator()(T b) { return a * b; }
+	T operator()(T a , T b) { return a * b; }
 };
 
 template<typename T>
 struct Divide {
-private:
-	T a;
-public:
-	Divide(T firstOperand) : a{ firstOperand } {}
-	T operator()(T b) { return b == 0 ? 1 : a / b; }
+	T operator()(T a, T b) { return b == 0 ? 1 : a / b; }
 };
 
 
