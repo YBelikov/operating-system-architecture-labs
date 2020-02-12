@@ -1,0 +1,7 @@
+move -1005000
+add 2
+move R1
+add 1
+move R2
+add R2
+move -1
